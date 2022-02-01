@@ -103,7 +103,7 @@ class CoverageRunner {
                 options.filename = options.filename.toLocaleLowerCase();
             }
             return this.instrumenter.instrumentSync(code, options.filename, map);
-        }
+        };
         let hookOpts = { verbose: false, extensions: ['.js'] };
         this.unhookRequire = iLibHook.hookRequire(this.matchFn, this.transformer, hookOpts);
         // initialize the global variable to stop mocha from complaining about leaks
@@ -186,7 +186,7 @@ export function run(testsRoot: string, clb): any {
         coverageRunner.setupCoverage();
         mocha.suite.afterAll(() => {
             coverageRunner.reportCoverage();
-        })
+        });
     }
 
     // Glob test files
