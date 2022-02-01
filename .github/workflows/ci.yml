@@ -16,3 +16,6 @@ jobs:
           yarn --frozen-lockfile
           yarn compile
         name: Compile
+      - run: |
+          yarn lint
+        name: Lint

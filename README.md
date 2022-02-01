@@ -9,10 +9,8 @@ A Mocha test runner with code coverage support for VS Code and Azure Data Studio
 
 ## Development
 
-- `yarn install`
-- Make necessary changes in [`lib`](./lib)
-- `yarn compile` (or `yarn watch`)
-- In [`sample`](./sample), run `yarn install`, `yarn compile` and `yarn test` to make sure integration test can run successfully
+- Run `yarn install` to install dependencies
+- Run `yarn compile` or `yarn watch` to compile
 
 
 ## Releasing
