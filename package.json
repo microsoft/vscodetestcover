@@ -1,0 +1,51 @@
+{
+  "name": "vscodetestcover",
+  "version": "1.1.0",
+  "description": "A Mocha test runner with code coverage support for VSCode Extensions.",
+  "main": "./out/src/index.js",
+  "scripts": {
+    "compile": "tsc",
+    "prepare": "npm run compile"
+  },
+  "keywords": [
+    "VSCode",
+    "Extension",
+    "Cover",
+    "Test"
+  ],
+  "author": "corivera",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corivera/vscodetestcover.git"
+  },
+  "devDependencies": {
+    "@types/node": "^10.7.0",
+    "@types/mocha": "^5.2.5",
+    "@types/istanbul-lib-coverage": "^2.0.1",
+    "@types/istanbul-lib-hook": "^2.0.0",
+    "@types/istanbul-lib-instrument": "^1.7.3",
+    "@types/istanbul-lib-report": "^3.0.0",
+    "@types/istanbul-lib-source-maps": "^1.2.2",
+    "@types/istanbul-reports": "^1.1.1",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tslint": "^8.1.4",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^3.8.3",
+    "tslint": "^5.20.1",
+    "tslint-microsoft-contrib": "^6.2.0"
+  },
+  "dependencies": {
+    "decache": "^4.4.0",
+    "glob": "^7.1.2",
+    "istanbul-lib-coverage": "^3.0.0",
+    "istanbul-lib-hook": "^3.0.0",
+    "istanbul-lib-instrument": "^4.0.0",
+    "istanbul-lib-report": "^3.0.0",
+    "istanbul-lib-source-maps": "^3.0.6",
+    "istanbul-reports": "^3.0.0",
+    "mocha": "^5.2.0"
+  }
+}

@@ -1,33 +1,12 @@
-# Project
+# vscodetestcover
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+A Mocha test runner with code coverage support for VSCode Extensions. This replaces the standard test runner from `vscode/lib/testrunner` and adds in code coverage support.
 
-As the maintainer of this project, please make a few updates:
+## Usage
+ In a standard VSCode extension project, replace the `src/test/index.ts` file with the contents of `sample/index.ts` installed as part of this node module. This will use the test runner with coverage.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+ To configure coverage settings, copy the `samples/coverconfig.json` beside the `index.ts` file and edit its contents. It defines where the expected src directory is, where to save coverage files, and more.
 
-## Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+## Licensing
+This code is originally from https://github.com/Microsoft/vscode-mssql. I have preserved the MIT license statement and Copyright from that project so things are still marked as Copyright Microsoft.
