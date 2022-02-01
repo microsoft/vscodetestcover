@@ -7,6 +7,23 @@ A Mocha test runner with code coverage support for VS Code and Azure Data Studio
 
  To configure coverage settings, copy the `samples/coverconfig.json` beside the `index.ts` file and edit its contents. It defines where the expected src directory is, where to save coverage files, and more.
 
+## Development
+
+- `yarn install`
+- Make necessary changes in [`lib`](./lib)
+- `yarn compile` (or `yarn watch`)
+- In [`sample`](./sample), run `yarn install`, `yarn compile` and `yarn test` to make sure integration test can run successfully
+
+
+## Releasing
+
+Release a new version of the extension by:
+
+1. Bump the version in [package.json](./package.json)
+2. Merge into main
+3. Create a new tag with the version number specified in step 1
+4. The release will be created in Github automatically by the CD pipeline, go to it and download the package artifact (tgz)
+5. Run `npm publish <path to tarball>`
 
 ## Licensing
 This code is originally from https://github.com/Microsoft/vscode-mssql. I have preserved the MIT license statement and Copyright from that project so things are still marked as Copyright Microsoft.

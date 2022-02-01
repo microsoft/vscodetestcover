@@ -5,7 +5,8 @@
   "main": "./out/src/index.js",
   "scripts": {
     "compile": "tsc",
-    "prepare": "npm run compile"
+    "watch": "tsc -w",
+    "prepare": "yarn compile"
   },
   "keywords": [
     "VSCode",
