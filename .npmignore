@@ -1,0 +1,5 @@
+.github
+*.tgz
+/src
+tsconfig.json
+tslint.json

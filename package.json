@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "A Mocha test runner with code coverage support for VS Code Azure Data Studio Extensions.",
   "main": "./out/src/index.js",
+  "typings": "./out/src/index.d.ts",
   "scripts": {
     "compile": "tsc",
     "watch": "tsc -w",
